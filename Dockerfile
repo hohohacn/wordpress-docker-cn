@@ -47,7 +47,7 @@ ENV WORDPRESS_VERSION 4.9.1-zh_CN
 
 
 RUN set -ex; \
-	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; \
+	curl -o wordpress.tar.gz -fSL "https://cn.wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; \
 # upstream tarballs include ./wordpress/ so this gives us /usr/src/wordpress
 	tar -xzf wordpress.tar.gz -C /usr/src/; \
 	rm wordpress.tar.gz; \
